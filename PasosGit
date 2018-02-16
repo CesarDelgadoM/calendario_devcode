@@ -1,0 +1,21 @@
+para inicializar un repositorio en un directorio existente, se ejecuta el comando 
+(git init), dentro de la ruta del archivo del proyecto, esto creara una carpeta aculta llamada (.git)
+
+"Si no se inicializa el proyecto, tendremos un (git status) como error fatal" 
+
+si nuestro proyecto es desarrollo web, al trabajar con atom y git, se mostraran los archivos nuevos en color verde, esto indica que no se han guardado
+
+ahora en git podemos hacer seguimiento de las modificaciones y del proyecto, si tenemos 
+archivos nuevos, git aun no los reconocera y estos apareceran con el nombre color rojo, indicando que no se han añadido al repositorio, para añadirlos utilizamos (git add nombre_archivo), se pueden añadir varios archivos con (git add .).
+
+luego haremos un commit o confirmacion, esto es un punto intermedio o de control al cual 
+se puede regresar, es como un chekpoint, siempre y cuando sea necesario.
+
+Para utilizarlos se escribre(git commit -m un mensaje que describa los cambios)
+
+Si se llega hacer un commit y se quiere dehacer esta accion, utilizamos (git reset HEAD nombre_archivo), aparecera de nuevo en color rojo con (git status).
+
+para borrar cambios hechos en algun archivo, se utiliza (git checkout -- nombre_archivo)
+y esto retornara al archivo confirmado anteriormente.
+
+Tambien para poder recuperar un archivo borrado por error que se encuentre confirmado, utilizando el comando (git checkout -- nombre_archivo), como tambien borrarlo permanentemente confirmado el cambio con un (git commit -m "")
